@@ -1,0 +1,17 @@
+{
+  "name": "electorate-finder",
+  "version": "1.0.0",
+  "description": "Takes a lat/long over http and returns AU federal electorate",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frederick Stark",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "express": "^4.13.4",
+    "pg": "^4.4.4",
+    "pg-native": "^1.10.0"
+  }
+}
