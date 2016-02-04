@@ -9,7 +9,7 @@
   "author": "Frederick Stark",
   "license": "UNLICENSED",
   "dependencies": {
-    "dot-env": "0.0.1",
+    "dotenv": "2.0.0",
     "express": "^4.13.4",
     "pg": "^4.4.4",
     "pg-native": "^1.10.0"
