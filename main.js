@@ -6,6 +6,15 @@ app.set('port', (process.env.PORT || 5000));
 
 var pg = require('pg').native;
 
+var allowCrossDomainRequests = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', process.env.CORS_ORIGIN);
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    next();
+}
+app.use('*', allowCrossDomainRequests);
+
 app.get('/', function (req, res) {
   res.send('Hello World');
 });
